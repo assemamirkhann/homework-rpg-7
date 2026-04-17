@@ -5,7 +5,6 @@ package com.narxoz.rpg.strategy;
  * Implementations determine how base stats are modified during battle.
  */
 public interface CombatStrategy {
-        int attack(int baseDamage);
     /**
      * Calculates the actual damage to deal given the combatant's base attack power.
      *
