@@ -1,19 +1,14 @@
 package com.narxoz.rpg.strategy;
 
-public class BalancedStrategy implements CombatStrategy {
+public class WarriorStrategy implements CombatStrategy {
 
-    @Override
     public int calculateDamage(int basePower) {
-        return basePower;
+        return basePower + 15;
     }
-
-    @Override
     public int calculateDefense(int baseDefense) {
-        return baseDefense;
+        return baseDefense + 10;
     }
-
-    @Override
     public String getName() {
-        return "Balanced";
+        return "Warrior Style";
     }
 }

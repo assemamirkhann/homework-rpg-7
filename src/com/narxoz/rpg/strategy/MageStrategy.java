@@ -1,19 +1,16 @@
 package com.narxoz.rpg.strategy;
 
-public class AggressiveStrategy implements CombatStrategy {
+public class MageStrategy implements CombatStrategy {
 
-    @Override
     public int calculateDamage(int basePower) {
-        return basePower + 10;
+        return basePower + 25;
     }
 
-    @Override
     public int calculateDefense(int baseDefense) {
         return baseDefense - 2;
     }
 
-    @Override
     public String getName() {
-        return "Aggressive";
+        return "Mage Style";
     }
 }
